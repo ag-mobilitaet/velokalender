@@ -1,0 +1,6 @@
+# Application
+*.ics
+
+# Environment
+.env
+.direnv
