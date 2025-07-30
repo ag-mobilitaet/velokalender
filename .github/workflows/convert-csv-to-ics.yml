@@ -1,5 +1,8 @@
 name: Convert CSV to ICS
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
