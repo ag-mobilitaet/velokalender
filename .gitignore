@@ -1,5 +1,5 @@
 # Application
-# *.ics
+*.ics
 
 # Environment
 .env
