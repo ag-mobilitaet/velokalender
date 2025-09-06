@@ -34,13 +34,14 @@ jobs:
       run: |
         python generate_ics.py
 
-    - name: Commit and push the generated ICS file
+    - name: Commit and push the generated ICS file (to a new branch)
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
+        git checkout -b update-ics-file
         git add events.ics
         git commit -m "Update events.ics"
-        git push
+        git push --set-upstream origin update-ics-file
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
