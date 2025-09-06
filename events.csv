@@ -1,4 +1,6 @@
 uid,dtstart,dtend,summary,description,location
-250826-16,2025-08-26 15:00:00,2025-08-26 16:00:00,First Event,This is a description of the first event.,Online
-250827-11,2025-08-27 10:00:00,2025-08-27 11:00:00,Second Event,This is a description of the second event.,Offline
-250828-11,2025-08-28 10:00:00,2025-08-28 11:00:00,Dritti Event,blablablabla,VVR
+250913-01,2025-09-13 14:00:00,2025-09-13 23:00:00,Velo Fuud Festival,Essen Drinks Freunde,Hardgutstrasse 7
+250922-01,2025-09-22 18:30:00,2025-09-22 21:00:00,Velodemo,https://velodemo.info/,Helvetiaplatz
+250926-01,2025-09-26 18:450:00,2025-09-26 22:00:00,Critical Mass,https://criticalmass-zh.ch,Bluntschibrunnen - General-Guisan-Quai
+251031-01,2025-10-31 18:450:00,2025-10-31 22:00:00,Critical Mass,https://criticalmass-zh.ch,Bluntschibrunnen - General-Guisan-Quai
+251128-01,2025-11-28 18:450:00,2025-11-28 22:00:00,Critical Mass,https://criticalmass-zh.ch,Bluntschibrunnen - General-Guisan-Quai
