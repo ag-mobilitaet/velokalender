@@ -1,11 +1,24 @@
 import csv
 from ics import Calendar, Event
 from datetime import datetime
+import pytz
 
-# Function to parse datetime strings (adjust format as needed)
+# Function to parse datetime strings and convert from Europe/Zurich to UTC
 def parse_datetime(dt_str):
     # Example: '2025-07-17 14:00:00'
-    return datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
+    # First, parse the datetime string into a naive datetime object
+    local_time = datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
+
+    # Define the timezone for Europe/Zurich
+    zurich_tz = pytz.timezone("Europe/Zurich")
+
+    # Localize the naive datetime object to Europe/Zurich time
+    local_time = zurich_tz.localize(local_time)
+
+    # Convert the localized time to UTC
+    utc_time = local_time.astimezone(pytz.utc)
+
+    return utc_time
 
 # Create a new calendar
 calendar = Calendar()
