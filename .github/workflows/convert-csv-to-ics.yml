@@ -7,7 +7,7 @@ permissions:
 on:
   push:
     branches:
-      - main
+      - feature/*
     paths:
       - events.csv  # Only trigger when the events.csv file changes
   workflow_dispatch:  # Allow manual trigger
