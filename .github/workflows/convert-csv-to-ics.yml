@@ -7,7 +7,9 @@ permissions:
 on:
   push:
     branches:
-      - main
+      - '**'            # Match all branches
+    branches-ignore:
+      - main            # Exclude the 'main' branch
     paths:
       - events.csv  # Only trigger when the events.csv file changes
   workflow_dispatch:  # Allow manual trigger
