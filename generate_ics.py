@@ -9,6 +9,7 @@ def parse_datetime(dt_str):
 # Create a new calendar
 calendar = Calendar()
 calendar.add('X-WR-CALNAME', 'Velokalender')
+calendar.add('VERSION', '2.0')
 
 # Load data from CSV
 with open("events.csv", newline='', encoding='utf-8') as csvfile:
