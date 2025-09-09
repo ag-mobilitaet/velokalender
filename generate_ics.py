@@ -1,27 +1,15 @@
 import csv
-from ics import Calendar, Event
 from datetime import datetime
-import pytz
+from icalendar import Calendar, Event
 
-# Function to parse datetime strings and convert from Europe/Zurich to UTC
+# Function to parse datetime strings (adjust format as needed)
 def parse_datetime(dt_str):
-    # Example: '2025-07-17 14:00:00'
-    # First, parse the datetime string into a naive datetime object
-    local_time = datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
-
-    # Define the timezone for Europe/Zurich
-    zurich_tz = pytz.timezone("Europe/Zurich")
-
-    # Localize the naive datetime object to Europe/Zurich time
-    local_time = zurich_tz.localize(local_time)
-
-    # Convert the localized time to UTC
-    utc_time = local_time.astimezone(pytz.utc)
-
-    return utc_time
+    return datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
 
 # Create a new calendar
 calendar = Calendar()
+calendar.add('X-WR-CALNAME', 'Velokalender')
+calendar.add('VERSION', '2.0')
 
 # Load data from CSV
 with open("events.csv", newline='', encoding='utf-8') as csvfile:
@@ -29,19 +17,18 @@ with open("events.csv", newline='', encoding='utf-8') as csvfile:
     
     for row in reader:
         event = Event()
-        event.uid = row["uid"]
-        event.begin = parse_datetime(row["dtstart"])
-        event.end = parse_datetime(row["dtend"])
-        event.name = row["summary"]
-        event.description = row["description"]
-        event.location = row["location"]
 
-        # Optional alarm (only if present and non-empty)
-        if "alarm" in row and row["alarm"].strip():
-            event.alarms = [row["alarm"]]  # You may need to convert to Alarm object if needed
+        # Set event attributes
+        event.add('uid', row["uid"])
+        event.add('dtstart', parse_datetime(row["dtstart"]))
+        event.add('dtend', parse_datetime(row["dtend"]))
+        event.add('summary', row["summary"])
+        event.add('description', row["description"])
+        event.add('location', row["location"])
 
-        calendar.events.add(event)
+        # Add event to calendar
+        calendar.add_component(event)
 
 # Save the calendar to an .ics file
-with open("events.ics", "w", encoding='utf-8') as f:
-    f.writelines(calendar)
+with open("events.ics", "wb") as f:
+    f.write(calendar.to_ical())
