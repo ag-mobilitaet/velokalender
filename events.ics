@@ -90,6 +90,15 @@ DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Vernetzungstreffen für Engagierte
+DTSTART:20260122T190000
+DTEND:20260122T210000
+UID:260122-01
+DESCRIPTION:https://www.provelozuerich.ch/event/vernetzungstreffen-fur-eng
+ agierte/
+LOCATION:Neue Hard 12 8005 Zürich
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Critical Mass
 DTSTART:20260130T184500
 DTEND:20260130T220000
@@ -106,6 +115,15 @@ DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20260319T090000
+DTEND:20260319T150000
+UID:260319-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-03-14/
+LOCATION:Helvetiaplatz
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Critical Mass
 DTSTART:20260327T184500
 DTEND:20260327T220000
@@ -114,12 +132,30 @@ DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20260418T090000
+DTEND:20260418T150000
+UID:260418-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-04-18/
+LOCATION:Helvetiaplatz
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Critical Mass
 DTSTART:20260424T184500
 DTEND:20260424T220000
 UID:260424-01
 DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20260509T090000
+DTEND:20260509T150000
+UID:260509-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-05-09/
+LOCATION:Helvetiaplatz
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Cycle Week
@@ -138,6 +174,15 @@ DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Velobörse Max Bill Platz
+DTSTART:20260530T090000
+DTEND:20260530T150000
+UID:260530-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-oerlikon-max-bil
+ l-platz/2026-05-30/
+LOCATION:Max Bill Platz
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Velodemo
 DTSTART:20260603T183000
 DTEND:20260603T210000
@@ -154,6 +199,15 @@ DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20260627T090000
+DTEND:20260627T150000
+UID:260627-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-06-27/
+LOCATION:Helvetiaplatz
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Critical Mass
 DTSTART:20260731T184500
 DTEND:20260731T220000
@@ -168,6 +222,24 @@ DTEND:20260828T220000
 UID:260828-01
 DESCRIPTION:https://criticalmass-zh.ch
 LOCATION:Bluntschibrunnen - General-Guisan-Quai
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20260822T090000
+DTEND:20260822T150000
+UID:260822-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-08-22/
+LOCATION:Helvetiaplatz
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Velobörse Max Bill Platz
+DTSTART:20260912T090000
+DTEND:20260912T150000
+UID:260912-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-oerlikon-max-bil
+ l-platz/2026-09-12/
+LOCATION:Max Bill Platz
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Velodemo
@@ -192,6 +264,15 @@ DTEND:20260927T170000
 UID:260927-01
 DESCRIPTION:https://www.slowup.ch/zuerichsee
 LOCATION:Bellevue
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Velobörse Helvetiaplatz
+DTSTART:20261003T090000
+DTEND:20261003T150000
+UID:261003-01
+DESCRIPTION:https://www.provelozuerich.ch/event/veloborse-zurich-helvetiap
+ latz/2026-10-03/
+LOCATION:Helvetiaplatz
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Critical Mass
